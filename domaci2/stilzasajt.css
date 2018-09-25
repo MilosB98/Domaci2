@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: linear-gradient(-25deg,#67f5be, rgb(84, 241, 110), rgba(131, 230, 164, 0.774), rgba(98, 241, 69, 0.37));
+	font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-shadow: 0 0 3px rgb(253, 219, 219), 0 0 5px rgb(223, 223, 250);
+    background-size: 400% 400%;
+	-webkit-animation: Gradient 4s ease infinite;
+	-moz-animation: Gradient 4s ease infinite;
+	animation: Gradient 4s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#pocetak{
+margin: 10px;
+padding: 20px;
+color:#444;
+border-bottom: 5px color rgb(61, 61, 61);
+font-size: 30px;
+text-align: center;
+}
+#pocetak1{
+    margin: 10px;
+    padding: 27px;
+    color:#444;
+    font-size: 20px;
+    text-align: center;
+    }
+    #pocetak2{
+     
+        margin: 10px;
+        padding: 27px;
+        color:#444;
+        font-size: 20px;
+        float: right;
+        }
+        #pocetak3{
+          
+          margin: 10px;
+          padding: 27px;
+          color:#444;
+          font-size: 20px;
+         float: left;
+          
+          
+          }
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px;
+}
+
+nav {
+    
+ 
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.zoom {
+    padding: 50px;
+  
+    transition: transform .2s; 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(2.5);
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 5px;
+   
+}
+.column img{
+    width: 100%;
+    height: auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.zacijenovnik {
+    position: relative;
+    background: #f8f0f0;
+    margin: 40px auto;
+    width: 80%;
+    height: 360px;
+    border:1px solid #303030;
+    
+  }
+  .left-bg, .right-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    transition: .25s ease;
+  }
+  .left-bg {
+    background-color:#a4e7dc;
+    left: 0;
+ 
+  }
+  .right-bg {
+    background-color:#79ff96;
+    background-position: right;
+    right: 0;
+  }
+  .right-bg:before {
+    content: "ILI";
+    font-weight: bold;
+    position: absolute;
+    background: white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    top: 150px;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .right-bg:after {
+    content: " ";
+    height: 280px;
+    width: 1px;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+  }
+  .right-bg:after {
+    right: 0;
+  }
+  .left-bg:hover {
+    width: 60%;
+  }
+  .left-bg:hover + .right-bg {
+    width: 40%;
+  }
+  .right-bg:hover {
+    width: 60%;
+  }
+  .right-bg:hover + .left-bg {
+    width: 40%;
+  }
+#avatar{
+    float:left;
+}
+
+.ime{
+    position: absolute;
+top :120px;
+left:450px;
+font-size: 45px;
+}
+#skills{
+    position: absolute;
+    top :200px;
+    left:450px;
+    font-size: 25px;
+    
+    }
+.pozicija{
+    position: absolute;
+    top :200px;
+    left:250px;
+    font-size: 15px;
+   
+    }
+
+.centar{
+  
+    width:50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,50%);
+    padding:20px;
+    
+    box-sizing: border-box;
+}
+.sve_vjestine{
+    box-sizing: border-box;
+    width:100%;
+    margin:20px 0;
+
+}
+.sve_vjestine p{
+   color:#fff;
+   text-transform: uppercase;
+   margin: 0 0 10px;
+   padding:0;
+   font-weight:bold;
+   letter-spacing:1px; 
+}
+.sve_vjestine p:nth-child(2){
+    
+    position:relative;
+    left:500px;
+    top:-25px;
+}
+.vjestina{
+    background:#262626;
+    padding:4px;
+    box-sizing: border-box;
+    border:1px solid #0fffb7;
+    border-radius:2px;
+    width:510px;
+}
+.nivo{
+    background:#7bffd3;
+    width:100%;
+    height: 5px;
+    width:500px;
+}
